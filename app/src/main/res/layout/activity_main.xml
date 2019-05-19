@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#a1d2f7"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/tvtrangchu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trang chủ"
+            android:background="#fff"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/tvtrochoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trò Chơi"
+            android:layout_weight="1"
+            android:background="#fff"/>
+
+        <Button
+            android:id="@+id/tvbantin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bản Tin"
+            android:layout_weight="1"
+            android:background="#fff"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bắt Đầu Học"
+            style="@style/kieuchudo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả về nghành CNTT"
+            style="@style/kieuchudo"
+            android:background="#eeacfc"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    style="@style/kieuchu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#f1e86a"
+                    android:text="    Học ngành Công nghệ thông tin, sinh viên được trang bị các kiến thức nền tảng về khoa học tự nhiên, kiến thức cơ bản như mạng máy tính, hệ thống thông tin, lập trình, phần mềm…
+     Đồng thời tùy chương trình đào tạo của từng trường đại học, người học sẽ được chọn học các chuyên ngành phù hợp với năng lực, sở thích như Công nghệ phần mềm, Khoa học máy tính, Hệ thống thông tin, An toàn thông tin, Mạng máy tính và truyền thông...
+     Đi sâu vào các chuyên ngành này, các bạn sẽ có cơ hội tiếp cận những kiến thức liên quan đến nghiên cứu phát triển, gia công hay ứng dụng hệ thống phần mềm; kiến thức về thiết kế, xây dựng, cài đặt, vận hành và bảo trì các thành phần phần cứng, phần mềm của hệ thống máy tính và các hệ thống thiết bị dựa trên máy tính; kiến thức về bảo mật hệ thống thông tin....Ra trường đảm bảo khả năng thực hành nghề nghiệp và đáp ứng yêu cầu công việc ở từng lĩnh vực cụ thể." />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Câu hỏi xác định độ phụ hợp với nghành"
+            style="@style/kieuchudo"
+            android:background="#eeacfc"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dưới đây là các câu hỏi xác định độ phù hợp của bạn với nghành CNTT, để kiểm tra xin hãy nhấn bắt đầu."
+            android:background="#62dac2"
+            android:layout_marginTop="20dp"
+            style="@style/kieuchu"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Bắt Đầu"
+            style="@style/kieuchudo"
+            android:id="@+id/bt_test"/>
+    </LinearLayout>
+
+</LinearLayout>
